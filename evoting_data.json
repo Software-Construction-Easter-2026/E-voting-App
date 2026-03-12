@@ -1,0 +1,360 @@
+{
+  "candidates": {
+    "1": {
+      "id": 1,
+      "full_name": "NABASA ISAAC",
+      "national_id": "D",
+      "date_of_birth": "2001-01-01",
+      "age": 25,
+      "gender": "M",
+      "education": "Bachelor's Degree",
+      "party": "NUP",
+      "manifesto": "Hello am Isaac",
+      "address": "Katovu",
+      "phone": "0709595831",
+      "email": "nabasaisaac16@gmail.com",
+      "has_criminal_record": false,
+      "years_experience": 12,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 20:33:26.485025",
+      "created_by": "admin"
+    },
+    "2": {
+      "id": 2,
+      "full_name": "LETICIA LAKICA",
+      "national_id": "32",
+      "date_of_birth": "1999-01-01",
+      "age": 27,
+      "gender": "F",
+      "education": "Bachelor's Degree",
+      "party": "NRM",
+      "manifesto": "Hello Please vote me",
+      "address": "Mukono",
+      "phone": "0709595831",
+      "email": "leticia@gmail.com",
+      "has_criminal_record": false,
+      "years_experience": 3,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 20:59:07.600454",
+      "created_by": "apophia"
+    }
+  },
+  "candidate_id_counter": 3,
+  "voting_stations": {
+    "1": {
+      "id": 1,
+      "name": "TC",
+      "location": "Katovu",
+      "region": "Lwengo",
+      "capacity": 20,
+      "registered_voters": 0,
+      "supervisor": "Emmanuel",
+      "contact": "0709595831",
+      "opening_time": "0:00",
+      "closing_time": "17:00",
+      "is_active": true,
+      "created_at": "2026-03-12 20:37:39.684341",
+      "created_by": "admin"
+    }
+  },
+  "station_id_counter": 2,
+  "polls": {
+    "1": {
+      "id": 1,
+      "title": "Uganda Decides",
+      "description": "Polls for Predents",
+      "election_type": "General",
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-13",
+      "positions": [
+        {
+          "position_id": 1,
+          "position_title": "President",
+          "candidate_ids": [
+            1,
+            2
+          ],
+          "max_winners": 2
+        }
+      ],
+      "station_ids": [
+        1
+      ],
+      "status": "open",
+      "total_votes_cast": 1,
+      "created_at": "2026-03-12 20:56:47.781121",
+      "created_by": "apophia"
+    }
+  },
+  "poll_id_counter": 2,
+  "positions": {
+    "1": {
+      "id": 1,
+      "title": "President",
+      "description": "President of Uganda",
+      "level": "National",
+      "max_winners": 2,
+      "min_candidate_age": 25,
+      "is_active": true,
+      "created_at": "2026-03-12 20:53:27.924488",
+      "created_by": "apophia"
+    }
+  },
+  "position_id_counter": 2,
+  "voters": {
+    "1": {
+      "id": 1,
+      "full_name": "APOPHIA ATWIJUKIRE",
+      "national_id": "1",
+      "date_of_birth": "2001-02-01",
+      "age": 25,
+      "gender": "F",
+      "address": "MUKONO",
+      "phone": "0709582321",
+      "email": "apophia@gmail.com",
+      "password": "b4acddb2a8f0895fdf34f79159efc7ff29114dd40228b15695fb12f8a9949b04",
+      "voter_card_number": "N7Q0O29CPKNP",
+      "station_id": 1,
+      "is_verified": true,
+      "is_active": true,
+      "has_voted_in": [
+        1,
+        1
+      ],
+      "registered_at": "2026-03-12 21:08:14.972145",
+      "role": "voter"
+    }
+  },
+  "voter_id_counter": 2,
+  "admins": {
+    "1": {
+      "id": 1,
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "System Administrator",
+      "email": "admin@evote.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 20:28:23.967643",
+      "is_active": true
+    },
+    "2": {
+      "id": 2,
+      "username": "apophia",
+      "password": "a059c47a073fcd52fe08e3f28f7c5d649148162da5cd67e6c8a5a09763110e5b",
+      "full_name": "ATWIJUKIRE APOPHIA",
+      "email": "apophiaatwijukire@gmail.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 20:46:44.209642",
+      "is_active": true
+    }
+  },
+  "admin_id_counter": 3,
+  "votes": [
+    {
+      "vote_id": "a9639f30fa28141d1",
+      "poll_id": 1,
+      "position_id": 1,
+      "candidate_id": 1,
+      "voter_id": 1,
+      "station_id": 1,
+      "timestamp": "2026-03-12 21:16:48.926058",
+      "abstained": false
+    }
+  ],
+  "audit_log": [
+    {
+      "timestamp": "2026-03-12 20:28:41.519428",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 20:33:26.485065",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Candidate 'NABASA ISAAC' created successfully! ID: 1"
+    },
+    {
+      "timestamp": "2026-03-12 20:34:34.377649",
+      "action": "UPDATE_CANDIDATE",
+      "user": "admin",
+      "details": "Updated candidate: NABASA ISAAC (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 20:37:39.684384",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Voting Station 'TC' created! ID: 1"
+    },
+    {
+      "timestamp": "2026-03-12 20:46:44.209688",
+      "action": "CREATE_ADMIN",
+      "user": "admin",
+      "details": "Created admin: apophia (Role: super_admin)"
+    },
+    {
+      "timestamp": "2026-03-12 20:47:51.495225",
+      "action": "LOGIN",
+      "user": "apophia",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 20:53:27.924539",
+      "action": "CREATE_POSITION",
+      "user": "apophia",
+      "details": "Position 'President' created! ID: 1"
+    },
+    {
+      "timestamp": "2026-03-12 20:56:47.781146",
+      "action": "CREATE_POLL",
+      "user": "apophia",
+      "details": "Created poll: Uganda Decides (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 20:59:07.600476",
+      "action": "CREATE_CANDIDATE",
+      "user": "apophia",
+      "details": "Candidate 'LETICIA LAKICA' created successfully! ID: 2"
+    },
+    {
+      "timestamp": "2026-03-12 21:02:52.735045",
+      "action": "LOGOUT",
+      "user": "apophia",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:05:32.590170",
+      "action": "LOGIN_FAILED",
+      "user": "FAADDCF8YQDR",
+      "details": "Invalid voter credentials"
+    },
+    {
+      "timestamp": "2026-03-12 21:05:45.141182",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:06:41.621881",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:08:14.972162",
+      "action": "REGISTER",
+      "user": "APOPHIA ATWIJUKIRE",
+      "details": "New voter registered with card: N7Q0O29CPKNP"
+    },
+    {
+      "timestamp": "2026-03-12 21:08:38.755689",
+      "action": "LOGIN_FAILED",
+      "user": "",
+      "details": "Invalid voter credentials"
+    },
+    {
+      "timestamp": "2026-03-12 21:08:47.195305",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:09:03.871000",
+      "action": "VERIFY_VOTER",
+      "user": "admin",
+      "details": "Voter 'APOPHIA ATWIJUKIRE' verified!"
+    },
+    {
+      "timestamp": "2026-03-12 21:09:10.077245",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:09:31.849807",
+      "action": "LOGIN",
+      "user": "N7Q0O29CPKNP",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:10:04.689991",
+      "action": "LOGOUT",
+      "user": "N7Q0O29CPKNP",
+      "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:10:17.146575",
+      "action": "LOGIN",
+      "user": "apophia",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:13:44.311710",
+      "action": "UPDATE_POLL",
+      "user": "apophia",
+      "details": "Updated poll: Uganda Decides"
+    },
+    {
+      "timestamp": "2026-03-12 21:14:31.214769",
+      "action": "ASSIGN_CANDIDATES",
+      "user": "apophia",
+      "details": "Updated candidates for poll: Uganda Decides"
+    },
+    {
+      "timestamp": "2026-03-12 21:14:59.272985",
+      "action": "LOGOUT",
+      "user": "apophia",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:15:10.696463",
+      "action": "LOGIN",
+      "user": "N7Q0O29CPKNP",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:15:20.711894",
+      "action": "LOGOUT",
+      "user": "N7Q0O29CPKNP",
+      "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:15:29.136745",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:16:02.987008",
+      "action": "OPEN_POLL",
+      "user": "admin",
+      "details": "Opened poll: Uganda Decides"
+    },
+    {
+      "timestamp": "2026-03-12 21:16:07.480109",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:16:17.265001",
+      "action": "LOGIN",
+      "user": "N7Q0O29CPKNP",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:16:48.926155",
+      "action": "CAST_VOTE",
+      "user": "N7Q0O29CPKNP",
+      "details": "Voted in poll: Uganda Decides (Hash: a9639f30fa28141d)"
+    },
+    {
+      "timestamp": "2026-03-12 21:16:53.463111",
+      "action": "LOGOUT",
+      "user": "N7Q0O29CPKNP",
+      "details": "Voter logged out"
+    }
+  ]
+}
