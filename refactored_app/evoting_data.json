@@ -1,0 +1,309 @@
+{
+  "candidates": {
+    "1": {
+      "id": 1,
+      "full_name": "man",
+      "national_id": "fb568843",
+      "date_of_birth": "2000-11-12",
+      "age": 25,
+      "gender": "M",
+      "education": "Bachelor's Degree",
+      "party": "ggt",
+      "manifesto": "fvhvdcfghihfdcxsrzx",
+      "address": "cfvb",
+      "phone": "0707125552",
+      "email": "m@g.com",
+      "has_criminal_record": false,
+      "years_experience": 12,
+      "is_active": false,
+      "is_approved": true,
+      "created_at": "2026-03-12 21:26:11.765496",
+      "created_by": ""
+    }
+  },
+  "candidate_id_counter": 2,
+  "voting_stations": {
+    "1": {
+      "id": 1,
+      "name": "May",
+      "location": "Mukono Mall",
+      "region": "Mukono",
+      "capacity": 1234,
+      "registered_voters": 0,
+      "supervisor": "Mr",
+      "contact": "0707234559",
+      "opening_time": "",
+      "closing_time": "",
+      "is_active": false,
+      "created_at": "2026-03-12 20:58:29.935212",
+      "created_by": ""
+    },
+    "2": {
+      "id": 2,
+      "name": "MK",
+      "location": "UCU",
+      "region": "Mukono",
+      "capacity": 1234,
+      "registered_voters": 0,
+      "supervisor": "Mayor",
+      "contact": "",
+      "opening_time": "09:00",
+      "closing_time": "16:00",
+      "is_active": false,
+      "created_at": "2026-03-12 21:29:44.080590",
+      "created_by": ""
+    },
+    "3": {
+      "id": 3,
+      "name": "MK",
+      "location": "UCU",
+      "region": "Mukono",
+      "capacity": 1234,
+      "registered_voters": 0,
+      "supervisor": "MAa",
+      "contact": "0707125553",
+      "opening_time": "09:00",
+      "closing_time": "14:00",
+      "is_active": false,
+      "created_at": "2026-03-12 21:34:00.955369",
+      "created_by": ""
+    }
+  },
+  "station_id_counter": 4,
+  "polls": {},
+  "poll_id_counter": 3,
+  "positions": {
+    "1": {
+      "id": 1,
+      "title": "Senator",
+      "description": "dd",
+      "level": "National",
+      "max_winners": 123,
+      "min_candidate_age": 34,
+      "is_active": true,
+      "created_at": "2026-03-12 21:39:55.770822",
+      "created_by": ""
+    },
+    "2": {
+      "id": 2,
+      "title": "chied",
+      "description": "bhjh",
+      "level": "Local",
+      "max_winners": 12,
+      "min_candidate_age": 12,
+      "is_active": false,
+      "created_at": "2026-03-12 21:43:46.589148",
+      "created_by": ""
+    },
+    "3": {
+      "id": 3,
+      "title": "President",
+      "description": "hihi",
+      "level": "National",
+      "max_winners": 2,
+      "min_candidate_age": 26,
+      "is_active": true,
+      "created_at": "2026-03-12 21:48:56.258259",
+      "created_by": ""
+    }
+  },
+  "position_id_counter": 4,
+  "voters": {},
+  "voter_id_counter": 1,
+  "admins": {
+    "1": {
+      "id": 1,
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "System Administrator",
+      "email": "admin@evote.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 11:31:27.437961",
+      "is_active": true
+    }
+  },
+  "admin_id_counter": 2,
+  "votes": [],
+  "audit_log": [
+    {
+      "timestamp": "2026-03-12 20:57:35.550630",
+      "action": "LOGIN_FAILED",
+      "user": "admin",
+      "details": "Invalid credentials."
+    },
+    {
+      "timestamp": "2026-03-12 20:57:45.954283",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 20:58:29.935249",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: Mk (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:23:07.605966",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:26:11.765534",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Created candidate: min (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:26:45.924554",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:27:26.634654",
+      "action": "UPDATE_CANDIDATE",
+      "user": "admin",
+      "details": "Updated candidate: man (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:28:11.452587",
+      "action": "UPDATE_CANDIDATE",
+      "user": "admin",
+      "details": "Updated candidate: man (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:29:44.080751",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: MK (ID: 2)"
+    },
+    {
+      "timestamp": "2026-03-12 21:33:06.503069",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:34:00.955395",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: MK (ID: 3)"
+    },
+    {
+      "timestamp": "2026-03-12 21:34:50.561419",
+      "action": "UPDATE_STATION",
+      "user": "admin",
+      "details": "Updated station: May (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:35:19.713427",
+      "action": "DELETE_STATION",
+      "user": "admin",
+      "details": "Deactivated station: MK"
+    },
+    {
+      "timestamp": "2026-03-12 21:38:02.195233",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:39:55.770875",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: Senator (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:43:01.609893",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:43:46.589258",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: j (ID: 2)"
+    },
+    {
+      "timestamp": "2026-03-12 21:47:21.078031",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:48:56.258302",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: President (ID: 3)"
+    },
+    {
+      "timestamp": "2026-03-12 21:49:20.374626",
+      "action": "UPDATE_POSITION",
+      "user": "admin",
+      "details": "Updated position: chied"
+    },
+    {
+      "timestamp": "2026-03-12 21:49:30.221714",
+      "action": "DELETE_POSITION",
+      "user": "admin",
+      "details": "Deactivated position: chied"
+    },
+    {
+      "timestamp": "2026-03-12 21:50:48.482825",
+      "action": "CREATE_POLL",
+      "user": "admin",
+      "details": "Created poll: van (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:52:41.131503",
+      "action": "CREATE_POLL",
+      "user": "admin",
+      "details": "Created poll: jbn (ID: 2)"
+    },
+    {
+      "timestamp": "2026-03-12 21:52:58.091245",
+      "action": "UPDATE_POLL",
+      "user": "admin",
+      "details": "Updated poll: meow"
+    },
+    {
+      "timestamp": "2026-03-12 21:54:02.115115",
+      "action": "DELETE_CANDIDATE",
+      "user": "admin",
+      "details": "Deactivated candidate: man (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:54:16.522573",
+      "action": "DELETE_POLL",
+      "user": "admin",
+      "details": "Deleted poll: meow"
+    },
+    {
+      "timestamp": "2026-03-12 21:54:35.765046",
+      "action": "DELETE_STATION",
+      "user": "admin",
+      "details": "Deactivated station: May"
+    },
+    {
+      "timestamp": "2026-03-12 21:54:45.984976",
+      "action": "DELETE_STATION",
+      "user": "admin",
+      "details": "Deactivated station: MK"
+    },
+    {
+      "timestamp": "2026-03-12 21:55:00.398458",
+      "action": "DELETE_POLL",
+      "user": "admin",
+      "details": "Deleted poll: jbn"
+    },
+    {
+      "timestamp": "2026-03-12 21:55:19.123061",
+      "action": "DELETE_STATION",
+      "user": "admin",
+      "details": "Deactivated station: MK"
+    }
+  ]
+}
