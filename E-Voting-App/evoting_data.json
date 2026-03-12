@@ -39,9 +39,29 @@
       "is_approved": true,
       "created_at": "2026-03-12 20:59:07.600454",
       "created_by": "apophia"
+    },
+    "3": {
+      "id": 3,
+      "full_name": "ATWIJUKIRE APOPHIA",
+      "national_id": "M23B23/051",
+      "date_of_birth": "1980-02-01",
+      "age": 46,
+      "gender": "F",
+      "education": "Bachelor's Degree",
+      "party": "NUP",
+      "manifesto": "Hello people vote me pleassseeeee",
+      "address": "Mbarara",
+      "phone": "07890303923",
+      "email": "apophia@gmail.com",
+      "has_criminal_record": false,
+      "years_experience": 1,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 21:45:12.431030",
+      "created_by": "admin"
     }
   },
-  "candidate_id_counter": 3,
+  "candidate_id_counter": 4,
   "voting_stations": {
     "1": {
       "id": 1,
@@ -355,6 +375,24 @@
       "action": "LOGOUT",
       "user": "N7Q0O29CPKNP",
       "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:41:58.020956",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:43:34.141528",
+      "action": "CANDIDATE_REJECTED",
+      "user": "admin",
+      "details": "Candidate ATWIJUKIRE APOPHIA rejected - criminal record"
+    },
+    {
+      "timestamp": "2026-03-12 21:45:12.431065",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Candidate 'ATWIJUKIRE APOPHIA' created successfully! ID: 3"
     }
   ]
 }
