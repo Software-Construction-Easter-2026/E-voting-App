@@ -1,7 +1,7 @@
 # GROUP MEMBERS
 # 1. NABASA ISAAC         M23B23/043
 # 2. LAKICA LETICIA       M23B23/023
-# 3. ATWIJUKRIE APOPHIA   M23B2/051
+# 3. ATWIJUKIRE APOPHIA   M23B23/051
 
 
 # National E-Voting Console Application (Refactored)
