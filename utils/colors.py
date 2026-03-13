@@ -1,12 +1,6 @@
 
 # ANSI color/style constants extracted from the original monolith.
-# Import everything from this module wherever terminal color is needed.
 
-import os
-import sys
-
-if sys.platform == "win32":
-    os.system("")   # enable VT100 sequences on Windows
 
 # ── text styles ───────────────────────────────────────────────────────────────
 RESET     = "\033[0m"
