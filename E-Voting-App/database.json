@@ -1,0 +1,349 @@
+{
+  "candidates": {
+    "1": {
+      "id": 1,
+      "full_name": "Museveni Kaguta",
+      "national_id": "Cma1111111111",
+      "date_of_birth": "1954-06-21",
+      "age": 71,
+      "gender": "M",
+      "education": "Master's Degree",
+      "party": "NRM",
+      "manifesto": "Best guy for the job, protecting the gains",
+      "address": "Rwakitura",
+      "phone": "0711111111",
+      "email": "km@ug.com",
+      "has_criminal_record": false,
+      "years_experience": 40,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 11:30:34.328887",
+      "created_by": "admin"
+    },
+    "2": {
+      "id": 2,
+      "full_name": "Bobi Wine",
+      "national_id": "Cmb1223333333",
+      "date_of_birth": "1980-12-28",
+      "age": 45,
+      "gender": "M",
+      "education": "Bachelor's Degree",
+      "party": "NUP",
+      "manifesto": "People Power Change",
+      "address": "Kampala",
+      "phone": "0722222222",
+      "email": "bw@gmail.com",
+      "has_criminal_record": false,
+      "years_experience": 4,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 11:41:38.727956",
+      "created_by": "admin"
+    }
+  },
+  "candidate_id_counter": 3,
+  "voting_stations": {
+    "1": {
+      "id": 1,
+      "name": "Serere",
+      "location": "Serere/Olio",
+      "region": "Serere",
+      "capacity": 300,
+      "registered_voters": 0,
+      "supervisor": "Charis Opol",
+      "contact": "0765821211",
+      "opening_time": "08:00",
+      "closing_time": "17:00",
+      "is_active": true,
+      "created_at": "2026-03-12 11:20:51.833906",
+      "created_by": "admin"
+    }
+  },
+  "station_id_counter": 2,
+  "polls": {
+    "1": {
+      "id": 1,
+      "title": "President",
+      "description": "Head of State",
+      "election_type": "General",
+      "start_date": "2026-01-15",
+      "end_date": "2026-01-16",
+      "positions": [
+        {
+          "position_id": 1,
+          "position_title": "President",
+          "candidate_ids": [
+            2
+          ],
+          "max_winners": 1
+        }
+      ],
+      "station_ids": [
+        1
+      ],
+      "status": "open",
+      "total_votes_cast": 1,
+      "created_at": "2026-03-12 11:31:36.368740",
+      "created_by": "admin"
+    }
+  },
+  "poll_id_counter": 2,
+  "positions": {
+    "1": {
+      "id": 1,
+      "title": "President",
+      "description": "Head of State",
+      "level": "National",
+      "max_winners": 1,
+      "min_candidate_age": 25,
+      "is_active": true,
+      "created_at": "2026-03-12 11:28:41.517615",
+      "created_by": "admin"
+    }
+  },
+  "position_id_counter": 2,
+  "voters": {
+    "1": {
+      "id": 1,
+      "full_name": "Charis Opol",
+      "national_id": "CMx36483902883",
+      "date_of_birth": "2004-12-22",
+      "age": 21,
+      "gender": "M",
+      "address": "Serere",
+      "phone": "0765821211",
+      "email": "charisopol@gmail.com",
+      "password": "b735030cadb4765fc61b609b9766aa681f15dc1d470cdab910de6ef724b3aad8",
+      "voter_card_number": "M5RR09Y41JJY",
+      "station_id": 1,
+      "is_verified": true,
+      "is_active": true,
+      "has_voted_in": [
+        1,
+        1
+      ],
+      "registered_at": "2026-03-12 11:26:08.898590",
+      "role": "voter"
+    }
+  },
+  "voter_id_counter": 2,
+  "admins": {
+    "1": {
+      "id": 1,
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "System Administrator",
+      "email": "admin@evote.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 11:17:07.085138",
+      "is_active": true
+    }
+  },
+  "admin_id_counter": 2,
+  "votes": [
+    {
+      "vote_id": "8f3b99197705a8961",
+      "poll_id": 1,
+      "position_id": 1,
+      "candidate_id": 2,
+      "voter_id": 1,
+      "station_id": 1,
+      "timestamp": "2026-03-12 11:45:02.076662",
+      "abstained": false
+    }
+  ],
+  "audit_log": [
+    {
+      "timestamp": "2026-03-12 11:17:21.932601",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:20:51.833952",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: Serere (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:24:23.939723",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:26:08.898606",
+      "action": "REGISTER",
+      "user": "Charis Opol",
+      "details": "New voter registered with card: M5RR09Y41JJY"
+    },
+    {
+      "timestamp": "2026-03-12 11:26:33.641067",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:27:27.556420",
+      "action": "VERIFY_VOTER",
+      "user": "admin",
+      "details": "Verified voter: Charis Opol"
+    },
+    {
+      "timestamp": "2026-03-12 11:28:41.517660",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: President (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:30:34.328922",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Created candidate: Museveni Kaguta (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:31:36.368765",
+      "action": "CREATE_POLL",
+      "user": "admin",
+      "details": "Created poll: President (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:32:04.703725",
+      "action": "ASSIGN_CANDIDATES",
+      "user": "admin",
+      "details": "Updated candidates for poll: President"
+    },
+    {
+      "timestamp": "2026-03-12 11:32:23.431817",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:32:44.140790",
+      "action": "LOGIN",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:34:58.492599",
+      "action": "LOGOUT",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:35:08.414672",
+      "action": "LOGIN_FAILED",
+      "user": "admin",
+      "details": "Invalid admin credentials"
+    },
+    {
+      "timestamp": "2026-03-12 11:35:16.134049",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:35:59.849695",
+      "action": "ASSIGN_CANDIDATES",
+      "user": "admin",
+      "details": "Updated candidates for poll: President"
+    },
+    {
+      "timestamp": "2026-03-12 11:36:14.368124",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:36:23.606427",
+      "action": "LOGIN",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:38:10.173732",
+      "action": "LOGOUT",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:38:19.799291",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:39:33.288285",
+      "action": "ASSIGN_CANDIDATES",
+      "user": "admin",
+      "details": "Updated candidates for poll: President"
+    },
+    {
+      "timestamp": "2026-03-12 11:41:38.728001",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Created candidate: Bobi Wine (ID: 2)"
+    },
+    {
+      "timestamp": "2026-03-12 11:41:52.532166",
+      "action": "ASSIGN_CANDIDATES",
+      "user": "admin",
+      "details": "Updated candidates for poll: President"
+    },
+    {
+      "timestamp": "2026-03-12 11:42:03.399226",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:42:15.395877",
+      "action": "LOGIN",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:43:26.430586",
+      "action": "LOGOUT",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:43:32.387935",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:43:55.695568",
+      "action": "OPEN_POLL",
+      "user": "admin",
+      "details": "Opened poll: President"
+    },
+    {
+      "timestamp": "2026-03-12 11:44:17.805956",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:44:31.586621",
+      "action": "LOGIN",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:45:02.076782",
+      "action": "CAST_VOTE",
+      "user": "M5RR09Y41JJY",
+      "details": "Voted in poll: President (Hash: 8f3b99197705a896)"
+    },
+    {
+      "timestamp": "2026-03-12 11:45:12.270743",
+      "action": "LOGOUT",
+      "user": "M5RR09Y41JJY",
+      "details": "Voter logged out"
+    }
+  ]
+}
