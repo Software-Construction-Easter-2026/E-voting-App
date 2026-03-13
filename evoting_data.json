@@ -1,0 +1,245 @@
+{
+  "candidates": {
+    "1": {
+      "id": 1,
+      "full_name": "Kyagulanyi Ssentamu Robert",
+      "national_id": "cm000001",
+      "date_of_birth": "1982-02-14",
+      "age": 44,
+      "gender": "M",
+      "education": "Bachelor's Degree",
+      "party": "NUP",
+      "manifesto": "A better Uganda",
+      "address": "Kamwokya",
+      "phone": "0790445786",
+      "email": "kyag@gmail.com",
+      "has_criminal_record": false,
+      "years_experience": 5,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 21:00:14.386720",
+      "created_by": "admin"
+    }
+  },
+  "candidate_id_counter": 2,
+  "voting_stations": {
+    "1": {
+      "id": 1,
+      "name": "Kampala Central Station",
+      "location": "Kampala Road",
+      "region": "Kampala",
+      "capacity": 1500,
+      "registered_voters": 0,
+      "supervisor": "Jane Davis",
+      "contact": "0770786654",
+      "opening_time": "08:00",
+      "closing_time": "17:00",
+      "is_active": true,
+      "created_at": "2026-03-12 20:53:39.163869",
+      "created_by": "admin"
+    }
+  },
+  "station_id_counter": 2,
+  "polls": {
+    "1": {
+      "id": 1,
+      "title": "General Election 2026",
+      "description": "National General Election",
+      "election_type": "General",
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-30",
+      "positions": [
+        {
+          "position_id": 1,
+          "position_title": "President",
+          "candidate_ids": [
+            1
+          ],
+          "max_winners": 1
+        }
+      ],
+      "station_ids": [
+        1
+      ],
+      "status": "open",
+      "total_votes_cast": 1,
+      "created_at": "2026-03-12 21:01:25.347272",
+      "created_by": "admin"
+    }
+  },
+  "poll_id_counter": 2,
+  "positions": {
+    "1": {
+      "id": 1,
+      "title": "President",
+      "description": "Head of state",
+      "level": "National",
+      "max_winners": 1,
+      "min_candidate_age": 25,
+      "is_active": true,
+      "created_at": "2026-03-12 20:58:08.471256",
+      "created_by": "admin"
+    }
+  },
+  "position_id_counter": 2,
+  "voters": {
+    "1": {
+      "id": 1,
+      "full_name": "Tendo Calvin",
+      "national_id": "cm0200909009",
+      "date_of_birth": "2002-08-01",
+      "age": 23,
+      "gender": "M",
+      "address": "kireka",
+      "phone": "0778445308",
+      "email": "tendo@gmail.com",
+      "password": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+      "voter_card_number": "CB88LMYTI3BK",
+      "station_id": 1,
+      "is_verified": true,
+      "is_active": true,
+      "has_voted_in": [
+        1,
+        1
+      ],
+      "registered_at": "2026-03-12 21:04:07.356911",
+      "role": "voter"
+    }
+  },
+  "voter_id_counter": 2,
+  "admins": {
+    "1": {
+      "id": 1,
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "System Administrator",
+      "email": "admin@evote.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 20:47:21.970920",
+      "is_active": true
+    }
+  },
+  "admin_id_counter": 2,
+  "votes": [
+    {
+      "vote_id": "855055719730dbb11",
+      "poll_id": 1,
+      "position_id": 1,
+      "candidate_id": 1,
+      "voter_id": 1,
+      "station_id": 1,
+      "timestamp": "2026-03-12 21:08:30.943940",
+      "abstained": false
+    }
+  ],
+  "audit_log": [
+    {
+      "timestamp": "2026-03-12 20:48:52.091060",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 20:53:39.163953",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: Kampala Central Station (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 20:57:36.963569",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 20:58:08.471289",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: President (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:00:14.386747",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Created candidate: Kyagulanyi Ssentamu Robert (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:01:25.347290",
+      "action": "CREATE_POLL",
+      "user": "admin",
+      "details": "Created poll: General Election 2026 (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:01:59.529306",
+      "action": "ASSIGN_CANDIDATES",
+      "user": "admin",
+      "details": "Updated candidates for poll: General Election 2026"
+    },
+    {
+      "timestamp": "2026-03-12 21:02:12.515449",
+      "action": "OPEN_POLL",
+      "user": "admin",
+      "details": "Opened poll: General Election 2026"
+    },
+    {
+      "timestamp": "2026-03-12 21:04:07.356918",
+      "action": "REGISTER",
+      "user": "Tendo Calvin",
+      "details": "New voter registered with card: CB88LMYTI3BK"
+    },
+    {
+      "timestamp": "2026-03-12 21:06:14.115244",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:06:23.258186",
+      "action": "VERIFY_ALL_VOTERS",
+      "user": "admin",
+      "details": "Verified 1 voters"
+    },
+    {
+      "timestamp": "2026-03-12 21:08:00.767897",
+      "action": "LOGIN",
+      "user": "CB88LMYTI3BK",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:08:30.944064",
+      "action": "CAST_VOTE",
+      "user": "CB88LMYTI3BK",
+      "details": "Voted in poll: General Election 2026 (Hash: 855055719730dbb1)"
+    },
+    {
+      "timestamp": "2026-03-12 21:08:51.603995",
+      "action": "LOGOUT",
+      "user": "CB88LMYTI3BK",
+      "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 21:09:02.505741",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:09:27.020445",
+      "action": "CLOSE_POLL",
+      "user": "admin",
+      "details": "Closed poll: General Election 2026"
+    },
+    {
+      "timestamp": "2026-03-12 21:10:04.826362",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 21:10:18.103056",
+      "action": "REOPEN_POLL",
+      "user": "admin",
+      "details": "Reopened poll: General Election 2026"
+    }
+  ]
+}
