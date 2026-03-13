@@ -1,9 +1,7 @@
-
 # All terminal display helper functions extracted from the original monolith.
 # This module ONLY handles output and input prompts – zero business logic.
 
 import os
-import sys
 from utils.colors import (
     RESET, BOLD, DIM, YELLOW, RED, GREEN, GRAY, BRIGHT_WHITE,
 )
@@ -38,90 +36,45 @@ def table_divider(width: int, theme_color: str) -> None:
 
 
 def error(msg: str) -> None:
+    """Print an error message."""
     print(f" {RED}{BOLD} {msg}{RESET}")
 
 
 def success(msg: str) -> None:
+    """Print a success message."""
     print(f" {GREEN}{BOLD} {msg}{RESET}")
 
 
 def warning(msg: str) -> None:
+    """Print a warning message."""
     print(f" {YELLOW}{BOLD} {msg}{RESET}")
 
 
 def info(msg: str) -> None:
+    """Print an informational message."""
     print(f" {GRAY}{msg}{RESET}")
 
 
 def menu_item(number: int, text: str, color: str) -> None:
+    """Print a formatted menu item."""
     print(f" {color}{BOLD}{number:>3}.{RESET} {text}")
 
 
 def status_badge(text: str, is_good: bool) -> str:
-    """Return a colored inline badge (does NOT print)."""
+    """Return a colored badge showing status."""
     return f"{GREEN}{text}{RESET}" if is_good else f"{RED}{text}{RESET}"
 
 
 def prompt(text: str) -> str:
-    """Show a styled input prompt and return stripped user input."""
+    """Show a styled input prompt and return user input."""
     return input(f" {BRIGHT_WHITE}{text}{RESET}").strip()
 
 
-def masked_input(prompt_text: str = "Password: ") -> str:
-    """Read a password character-by-character, echoing '*' instead of the real char."""
-    print(f" {BRIGHT_WHITE}{prompt_text}{RESET}", end="", flush=True)
-    password = ""
-
-    if sys.platform == "win32":
-        import msvcrt
-        while True:
-            ch = msvcrt.getwch()
-            if ch in ("\r", "\n"):
-                print()
-                break
-            elif ch in ("\x08", "\b"):
-                if password:
-                    password = password[:-1]
-                    sys.stdout.write("\b \b")
-                    sys.stdout.flush()
-            elif ch == "\x03":
-                raise KeyboardInterrupt
-            else:
-                password += ch
-                sys.stdout.write(f"{YELLOW}*{RESET}")
-                sys.stdout.flush()
-    else:
-        import tty
-        import termios
-        fd = sys.stdin.fileno()
-        old_settings = termios.tcgetattr(fd)
-        try:
-            tty.setraw(fd)
-            while True:
-                ch = sys.stdin.read(1)
-                if ch in ("\r", "\n"):
-                    print()
-                    break
-                elif ch in ("\x7f", "\x08"):
-                    if password:
-                        password = password[:-1]
-                        sys.stdout.write("\b \b")
-                        sys.stdout.flush()
-                elif ch == "\x03":
-                    raise KeyboardInterrupt
-                else:
-                    password += ch
-                    sys.stdout.write(f"{YELLOW}*{RESET}")
-                    sys.stdout.flush()
-        finally:
-            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-
-    return password
-
-
 def clear_screen() -> None:
+    """Clear the terminal screen."""
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def pause() -> None:
+    """Pause execution until the user presses Enter."""
     input(f"\n {DIM}Press Enter to continue...{RESET}")

@@ -14,20 +14,20 @@ class AuditLogger:
     def log(self, action: str, user: str, details: str) -> None:
         """Append a timestamped audit entry."""
         self._log.append({
-            "timestamp": str(datetime.datetime.now()),
-            "action":    action,
-            "user":      user,
-            "details":   details,
+            "timestamp": datetime.datetime.now().isoformat(),
+            "action": action,
+            "user": user,
+            "details": details,
         })
 
     def get_log(self) -> list:
-        """Return the full audit log (used by the storage layer to persist it)."""
+        """Return the full audit log."""
         return self._log
 
     def set_log(self, log_data: list) -> None:
-        """Restore the audit log from persisted data on app startup."""
+        """Restore the audit log from saved data."""
         self._log = log_data
 
 
-# Single shared instance – import this everywhere instead of the class.
+# Shared logger instance used across the system
 audit_logger = AuditLogger()
