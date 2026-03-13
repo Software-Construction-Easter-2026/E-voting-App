@@ -1,0 +1,80 @@
+{
+  "candidates": {},
+  "candidate_id_counter": 1,
+  "voting_stations": {
+    "1": {
+      "id": 1,
+      "name": "Kampala",
+      "location": "Kla",
+      "region": "Wakiso",
+      "capacity": 50,
+      "registered_voters": 0,
+      "supervisor": "Trishia",
+      "contact": "0703462641",
+      "opening_time": "8:00",
+      "closing_time": "5:00",
+      "is_active": true,
+      "created_at": "2026-03-12 15:07:19.082194",
+      "created_by": "admin"
+    }
+  },
+  "station_id_counter": 2,
+  "polls": {},
+  "poll_id_counter": 1,
+  "positions": {
+    "1": {
+      "id": 1,
+      "title": "President",
+      "description": "From NRM",
+      "level": "National",
+      "max_winners": 3,
+      "min_candidate_age": 25,
+      "is_active": true,
+      "created_at": "2026-03-12 15:14:29.296326",
+      "created_by": "admin"
+    }
+  },
+  "position_id_counter": 2,
+  "voters": {},
+  "voter_id_counter": 1,
+  "admins": {
+    "1": {
+      "id": 1,
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "System Administrator",
+      "email": "admin@evote.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 15:04:51.724802",
+      "is_active": true
+    }
+  },
+  "admin_id_counter": 2,
+  "votes": [],
+  "audit_log": [
+    {
+      "timestamp": "2026-03-12 15:05:53.019819",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 15:07:19.082194",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: Kampala (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 15:14:29.296326",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: President (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 15:24:05.880116",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    }
+  ]
+}
