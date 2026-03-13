@@ -1,16 +1,32 @@
-"""Candidate model for the E-Voting System, this module defines the Candidate class which represents a person
-running for political office in an election."""
+"""Candidate model for the E-Voting System."""
+
 import datetime
 
+
 class Candidate:
-    """Represents a political candidate"""
-    
-    def __init__(self, id=None, full_name=None, national_id=None, 
-                 date_of_birth=None, age=None, gender=None, education=None,
-                 party=None, manifesto=None, address=None, phone=None, email=None,
-                 has_criminal_record=False, years_experience=0, 
-                 is_active=True, is_approved=True, created_by=None):
-        
+    """Represents a political candidate in the electoral system."""
+
+    def __init__(
+        self,
+        id=None,
+        full_name=None,
+        national_id=None,
+        date_of_birth=None,
+        age=None,
+        gender=None,
+        education=None,
+        party=None,
+        manifesto=None,
+        address=None,
+        phone=None,
+        email=None,
+        has_criminal_record=False,
+        years_experience=0,
+        is_active=True,
+        is_approved=True,
+        created_by=None,
+        created_at=None,
+    ):
         self.id = id
         self.full_name = full_name
         self.national_id = national_id
@@ -27,27 +43,27 @@ class Candidate:
         self.years_experience = years_experience
         self.is_active = is_active
         self.is_approved = is_approved
-        self.created_at = str(datetime.datetime.now())
         self.created_by = created_by
-    
+        self.created_at = created_at or str(datetime.datetime.now())
+
     def to_dict(self):
-        """Convert to a dictionary for JSON storage"""
+        """Convert candidate object to dictionary."""
         return self.__dict__
-    
+
     @classmethod
     def from_dict(cls, data):
-        """Create Candidate from dictionary"""
-        candidate = cls()
-        for key, value in data.items():
-            setattr(candidate, key, value)
-        return candidate
-    
+        """Create a candidate object from a dictionary."""
+        return cls(**data)
+
     def is_eligible(self, min_age=25):
-        """Check if candidate meets eligibility test"""
-        return (self.is_active and self.is_approved and 
-                not self.has_criminal_record and 
-                self.age >= min_age)
-    
+        """Check whether the candidate meets the minimum eligibility rules."""
+        return (
+            self.is_active
+            and self.is_approved
+            and not self.has_criminal_record
+            and self.age >= min_age
+        )
+
     def display_name(self):
-        """Get a formatted name with party"""
+        """Return the candidate name together with party."""
         return f"{self.full_name} ({self.party})"
